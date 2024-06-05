@@ -3,30 +3,6 @@ from torch import nn
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 
-class MyEncoder(nn.Module):
-    def __init__(self,dim = 400):
-        super(MyEncoder, self).__init__()
-
-        torch.manual_seed(42)
-
-        self.v = torch.rand(dim)
-
-
-    def forward(self, x):
-        encode = []
-
-        for i in x[0]:
-            a = i * self.v
-            encode.append(a)
-
-        encode = torch.stack(encode)
-        encode = torch.unsqueeze(encode, dim=0)
-
-        return encode
-
-
-
-
 
 class PositionalEncoding(nn.Module):
 
