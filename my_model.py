@@ -25,34 +25,6 @@ class MyEncoder(nn.Module):
         return encode
 
 
-class FullFloatEncoding(nn.Module):
-    def __init__(self, embedding_size: int = 400, vmax: float = 1.0):
-        super(FullFloatEncoding, self).__init__()
-        if embedding_size % 2 != 0:
-            raise ValueError(f"Embedding size {embedding_size} can't be odd.")
-        self.embedding_size = embedding_size
-        self.vmax = vmax
-
-    def forward(self, x):
-
-        encode = []
-
-        for value in x[0]:
-
-            integer = int(value)
-            decimal = value - integer
-            scalar = integer * 10**decimal
-            embedding = torch.zeros((self.embedding_size,))
-            for i in range(0, self.embedding_size, 2):
-                embedding[i] = scalar / (i + 1)
-                embedding[i + 1] = -scalar / (i + 1)
-
-            encode.append(embedding)
-
-        encode = torch.stack(encode)
-        encode = torch.unsqueeze(encode, dim=0)
-
-        return encode
 
 
 
