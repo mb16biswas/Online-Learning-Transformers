@@ -1,5 +1,7 @@
 # Online-Learning-Transformers
 
+Find the preprint paper [here](https://arxiv.org/pdf/2409.10242).
+
 ## Instructions to run the code
 
 ### Required directory structure to save the results:
