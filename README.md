@@ -1,6 +1,8 @@
 # Online-Learning-Transformers
 
-Find the preprint paper [here](https://arxiv.org/pdf/2409.10242).
+Find the preprint [here](https://arxiv.org/pdf/2409.10242).
+
+![Overall Pipeline](https://github.com/user-attachments/assets/7755f780-904b-4d91-8689-8ba5539a26c7)
 
 ## Instructions to run the code
 
