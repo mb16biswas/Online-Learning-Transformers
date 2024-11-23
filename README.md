@@ -25,7 +25,7 @@ pip install -r requirements.txt
 
 ```
 
-### Run the command for KKD training
+### Run the command for  training
 
 ```
 python main.py
