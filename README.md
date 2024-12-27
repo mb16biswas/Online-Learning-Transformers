@@ -2,7 +2,9 @@
 
 Find the preprint [here](https://arxiv.org/pdf/2409.10242).
 
-![Overall Pipeline](https://github.com/user-attachments/assets/7755f780-904b-4d91-8689-8ba5539a26c7)
+![Overall Pipeline](https://github.com/user-attachments/assets/d2c18642-afad-4b22-8f03-2d67b38a48b9)
+
+
 
 ## Instructions to run the code
 
